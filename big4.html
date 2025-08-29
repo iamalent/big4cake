@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big 4 Cakes - Artisan Cakes in Haraorou, Imphal East</title>
+    <link rel="icon" href="logo1.jpg" type="image/jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6, .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=1950&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Custom Swiper Styles */
+        .swiper-container {
+            --swiper-navigation-size: 28px;
+        }
+        .swiper-container .swiper-button-next,
+        .swiper-container .swiper-button-prev {
+            color: #ffffff !important;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 9999px;
+            width: 44px;
+            height: 44px;
+            transition: background-color 0.3s ease;
+        }
+        .swiper-container .swiper-button-next:hover,
+        .swiper-container .swiper-button-prev:hover {
+             background-color: rgba(0, 0, 0, 0.5);
+        }
+        .swiper-container .swiper-pagination-bullet-active {
+            background: #ffffff !important;
+        }
+    </style>
+</head>
+<body class="bg-pink-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+            <a href="#home" class="flex-shrink-0">
+                <img src="logo1.jpg" alt="Big 4 Cakes Logo" class="h-16 w-auto">
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-pink-600 transition duration-300">Home</a>
+                <a href="#gallery" class="text-gray-600 hover:text-pink-600 transition duration-300">Gallery</a>
+                <a href="#about" class="text-gray-600 hover:text-pink-600 transition duration-300">About Us</a>
+                <a href="#contact" class="text-gray-600 hover:text-pink-600 transition duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6 text-pink-800"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#home" class="block py-2 text-gray-600 hover:text-pink-600">Home</a>
+            <a href="#gallery" class="block py-2 text-gray-600 hover:text-pink-600">Gallery</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-pink-600">About Us</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-pink-600">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero-bg text-white min-h-[60vh] md:min-h-[80vh] flex items-center">
+            <div class="bg-black/50 w-full h-full flex items-center">
+                <div class="container mx-auto px-6 text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold font-display mb-4 leading-tight">Artisan Cakes for Unforgettable Moments</h1>
+                    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Discover the art of celebration with our bespoke cakes, handcrafted with passion in Manipur.</p>
+                    <a href="#gallery" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">View Our Creations</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signature Cakes Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-display text-center font-bold text-pink-900 mb-12">Featured Creations</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Cake 1 with Slider -->
+                    <div class="bg-pink-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <div class="swiper-container wedding-cake-swiper h-80 w-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="wed1.webp" alt="Elegant Wedding Cake 1" class="w-full h-full object-cover"></div>
+                                <div class="swiper-slide"><img src="wed2.webp" alt="Elegant Wedding Cake 2" class="w-full h-full object-cover"></div>
+                                <div class="swiper-slide"><img src="wed3.webp" alt="Elegant Wedding Cake 3" class="w-full h-full object-cover"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-2xl font-bold text-pink-800 mb-2">Elegant Wedding Cakes</h3>
+                            <p class="text-gray-600">Breathtaking tiered cakes with intricate details, designed to be the centerpiece of your special day.</p>
+                        </div>
+                    </div>
+                    <!-- Cake 2 with Slider -->
+                    <div class="bg-pink-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <div class="swiper-container birthday-cake-swiper h-80 w-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="cbc2.jpg"Custom Birthday Cake 1" class="w-full h-full object-cover"></div>
+                                <div class="swiper-slide"><img src="cbc3.jpg" alt="Custom Birthday Cake 2" class="w-full h-full object-cover"></div>
+                                <div class="swiper-slide"><img src="cbc.webp" alt="Custom Birthday Cake 3" class="w-full h-full object-cover"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-2xl font-bold text-pink-800 mb-2">Custom Birthday Cakes</h3>
+                            <p class="text-gray-600">From fun cartoon themes to sophisticated designs, we bring your birthday cake dreams to life.</p>
+                        </div>
+                    </div>
+                    <!-- Cake 3 with Slider -->
+                    <div class="bg-pink-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                         <div class="swiper-container cupcake-swiper h-80 w-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="cp3.jpg" alt="Designer Cupcakes 1" class="w-full h-full object-cover"></div>
+                                <div class="swiper-slide"><img src="cp2.jpg" alt="Designer Cupcakes 2" class="w-full h-full object-cover"></div>
+                                <div class="swiper-slide"><img src="cp.webp" alt="Designer Cupcakes 3" class="w-full h-full object-cover"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-2xl font-bold text-pink-800 mb-2">Designer Cupcakes</h3>
+                            <p class="text-gray-600">Perfectly portioned and beautifully decorated, our cupcakes are a delightful treat for any occasion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-display text-center font-bold text-pink-900 mb-12">Our Cake Gallery</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 aspect-w-1 aspect-h-1">
+
+                        <img src="Tier cake.jpg" alt="Tiered Cake" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    </div>
+                     <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 aspect-w-1 aspect-h-1">
+                        <img src="character.webp" alt="Character Cake" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    </div>
+                     <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 aspect-w-1 aspect-h-1">
+                        <img src="flora.jpg" alt="Floral Design Cake" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    </div>
+                     <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 aspect-w-1 aspect-h-1">
+                        <img src="footballcake.webp" alt="Modern Cake" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    </div>
+                     <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 aspect-w-1 aspect-h-1">
+                        <img src="annniversary.webp" alt="Anniversary Cake" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    </div>
+                     <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 aspect-w-1 aspect-h-1">
+                        <img src="celeb.webp" fit=crop" alt="Celebration Cake" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    </div>
+                     <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 aspect-w-1 aspect-h-1">
+                        <img src="bento.jpg" alt="Bento Cake" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    </div>
+                     <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 aspect-w-1 aspect-h-1">
+                        <img src="birthday.webp" alt="Chocolate Cake" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1556909172-6ab63f18fd12?q=80&w=1470&auto=format&fit=crop" alt="Our Bakery" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-display font-bold text-pink-900 mb-4">The Story of Big 4 Cakes</h2>
+                        <p class="text-gray-600 mb-4">Welcome to Big 4 Cakes, where passion for baking meets artistic creation. Founded by a dedicated baker, our journey began with a simple mission: to bring joy to every celebration in Imphal East with a delicious, beautiful cake.</p>
+                        <p class="text-gray-600">We specialize in custom-designed cakes, paying close attention to every detail to ensure your vision comes to life. We use high-quality ingredients to create cakes that not only look stunning but also taste divine. Let us be a part of your special moments.</p>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-pink-100/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-display text-center font-bold text-pink-900 mb-12">Order Your Dream Cake</h2>
+                <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <!-- Contact Form -->
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Your Name">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-semibold mb-2">Email or Phone</label>
+                                <input type="text" id="contact-info" name="contact-info" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Your Email or Phone Number">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 font-semibold mb-2">Cake Details</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Tell us about the cake you're dreaming of..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Send Inquiry</button>
+                        </form>
+                        <!-- Contact Info -->
+                        <div class="space-y-6">
+                             <div>
+                                <h3 class="font-display text-xl font-bold text-pink-800 mb-2">Find Us</h3>
+                                <p class="text-gray-600">Haraorou, Imphal East, India</p>
+                            </div>
+                             <div>
+                                <h3 class="font-display text-xl font-bold text-pink-800 mb-2">Call or WhatsApp</h3>
+                                <p class="text-gray-600">+917005783847</p>
+                            </div>
+                             <div>
+                                <h3 class="font-display text-xl font-bold text-pink-800 mb-2">Follow Us</h3>
+                                <p class="text-gray-600">Stay updated with our latest creations on Instagram!</p>
+                                <a href="https://www.instagram.com/big4_cakes/" target="_blank" class="inline-block mt-2 text-pink-600 font-semibold hover:underline">@big4_cakes</a>
+                            </div>
+                             <div>
+                                <h3 class="font-display text-xl font-bold text-pink-800 mb-2">Hours</h3>
+                                <p class="text-gray-600">Custom orders available by appointment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-pink-900 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <a href="#home">
+                <img src="logo1.jpg" alt="Big 4 Cakes Logo" class="h-20 w-auto mx-auto mb-4">
+            </a>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://www.instagram.com/big4_cakes/" target="_blank" class="hover:text-pink-300 transition duration-300"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+            </div>
+            <p>&copy; 2025 Big 4 Cakes. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Swiper.js JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+
+        // Swiper options
+        const swiperOptions = {
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        };
+
+        // Initialize Swipers
+        const weddingSwiper = new Swiper('.wedding-cake-swiper', swiperOptions);
+        const birthdaySwiper = new Swiper('.birthday-cake-swiper', swiperOptions);
+        const cupcakeSwiper = new Swiper('.cupcake-swiper', swiperOptions);
+    </script>
+</body>
+</html>
